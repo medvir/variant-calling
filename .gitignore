@@ -1,1 +1,5 @@
-raw-data/
+raw_data/
+raw_data_sampled/
+mapped_reads/
+call_variants/
+.snakemake/
