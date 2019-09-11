@@ -28,7 +28,7 @@ rule map_to_ref:
     shell:
         """
         bwa index {input.ref}
-        bwa mem -t 8 {input.ref} {input.fastq} | samtools view -u | samtools sort -o {output}
+        bwa mem {input.ref} {input.fastq} | samtools view -u | samtools sort -o {output}
         """
 
 rule indelqual:
