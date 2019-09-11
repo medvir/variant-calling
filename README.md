@@ -38,7 +38,7 @@ Try running a dry-run first:
 If there were no issues (all green) you can actually run Snakemake:  
 `snakemake --use-conda`  
 
-If you want to run multiple jobs in parallel, you can define the number of jobs with the `-j` flag:
+If you want to run multiple jobs in parallel, you can define the number of jobs with the `-j` flag:  
 `snakemake --use-conda -j 4`  
 
 ## Notes
