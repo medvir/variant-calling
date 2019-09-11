@@ -39,8 +39,10 @@ If there were no issues (all green) you can actually run Snakemake:
 `snakemake --use-conda`  
 
 If you want to run multiple jobs in parallel, you can define the number of jobs with the `-j` flag:  
+(this can however in some cases lead to an error, not sure why)  
 `snakemake --use-conda -j 4`  
 
 ## Notes
 - Read clippings are not counted  
-- LoFreq sets a minimum coverage of 10 by default
+- LoFreq sets a minimum coverage of 10 by default  
+- duplicated reads are not removed (could be done with [`seqkit rmdup -s`](https://bioinf.shenwei.me/seqkit/usage/#rmdup))
